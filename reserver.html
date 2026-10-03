@@ -1,1 +1,486 @@
+<!DOCTYPE html>
 
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Réserver un cours — Avec Vincent
+</title>
+
+<meta
+  name="description"
+  content="Demandez un premier cours particulier à Lyon ou en visioconférence avec Avec Vincent."
+>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body data-page="booking">
+
+
+<header class="site-header">
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+AVEC VINCENT
+</a>
+
+<div class="desktop-nav">
+
+<a href="cours.html">
+Cours & tarifs
+</a>
+
+<a href="a-propos.html">
+À propos
+</a>
+
+<a
+  href="reserver.html"
+  class="nav-cta active"
+>
+Réserver
+</a>
+
+</div>
+
+<button
+  class="menu-button"
+  aria-label="Ouvrir le menu"
+  aria-expanded="false"
+>
+<span></span>
+<span></span>
+</button>
+
+</nav>
+
+</header>
+
+
+<div class="mobile-menu">
+
+<a href="index.html">Accueil</a>
+
+<a href="cours.html">Cours & tarifs</a>
+
+<a href="a-propos.html">À propos</a>
+
+<a href="reserver.html">Réserver</a>
+
+</div>
+
+
+<main>
+
+
+<section class="page-hero">
+
+<div class="container">
+
+<span class="eyebrow">
+Premier contact
+</span>
+
+<h1>
+Parlons simplement
+<span class="gold">
+du besoin de l'élève.
+</span>
+</h1>
+
+<p class="lead">
+Indiquez le niveau, la matière et l'objectif.
+Cela suffit pour organiser la suite.
+</p>
+
+</div>
+
+</section>
+
+
+<section
+  class="section"
+  style="padding-top:20px"
+>
+
+<div class="container booking-grid">
+
+
+<div class="form-card">
+
+
+<form id="bookingForm">
+
+
+<div class="form-grid">
+
+
+<div class="form-group">
+
+<label for="name">
+Votre nom
+</label>
+
+<input
+  id="name"
+  name="name"
+  type="text"
+  autocomplete="name"
+  required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="student">
+Prénom de l'élève
+</label>
+
+<input
+  id="student"
+  name="student"
+  type="text"
+  required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="email">
+E-mail
+</label>
+
+<input
+  id="email"
+  name="email"
+  type="email"
+  autocomplete="email"
+  required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="phone">
+Téléphone
+</label>
+
+<input
+  id="phone"
+  name="phone"
+  type="tel"
+  autocomplete="tel"
+  required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="level">
+Niveau
+</label>
+
+<select
+  id="level"
+  name="level"
+  required
+>
+
+<option value="">
+Choisir
+</option>
+
+<option>
+Seconde
+</option>
+
+<option>
+Première
+</option>
+
+<option>
+Terminale
+</option>
+
+<option>
+Prépa ECG — 1re année
+</option>
+
+<option>
+Prépa ECG — 2e année
+</option>
+
+<option>
+Prépa ECG — khûbe
+</option>
+
+<option>
+Autre
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="subject">
+Matière
+</label>
+
+<select
+  id="subject"
+  name="subject"
+  required
+>
+
+<option value="">
+Choisir
+</option>
+
+<option>
+Mathématiques
+</option>
+
+<option>
+Géopolitique / HGGSP
+</option>
+
+<option>
+Anglais
+</option>
+
+<option>
+Allemand
+</option>
+
+<option>
+Méthodologie
+</option>
+
+<option>
+BAC
+</option>
+
+<option>
+BCE / ECRICOME
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group full">
+
+<label for="format">
+Format
+</label>
+
+<select
+  id="format"
+  name="format"
+  required
+>
+
+<option value="">
+Choisir
+</option>
+
+<option>
+À domicile à Lyon
+</option>
+
+<option>
+En visioconférence
+</option>
+
+<option>
+Je ne sais pas encore
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group full">
+
+<label for="objective">
+Objectif ou difficultés rencontrées
+</label>
+
+<textarea
+  id="objective"
+  name="objective"
+  placeholder="Ex. améliorer les résultats en maths, préparer ECRICOME, reprendre les bases en allemand..."
+  required
+></textarea>
+
+</div>
+
+
+</div>
+
+
+<div class="checkbox-row">
+
+<input
+  id="privacy"
+  type="checkbox"
+  required
+>
+
+<label
+  for="privacy"
+  style="font-weight:400;color:#68737f"
+>
+J'accepte que les informations saisies
+soient utilisées afin de répondre
+à ma demande.
+</label>
+
+</div>
+
+
+<button
+  type="submit"
+  class="button button-primary"
+>
+Préparer ma demande →
+</button>
+
+
+<p
+  class="small"
+  style="margin-top:16px"
+>
+Votre application e-mail s'ouvrira
+avec le message déjà préparé.
+Vous pourrez le vérifier avant de l'envoyer.
+</p>
+
+
+</form>
+
+
+</div>
+
+
+<aside class="booking-side">
+
+<span class="eyebrow">
+Contact
+</span>
+
+<h3>
+Une question avant de réserver ?
+</h3>
+
+<p>
+Vous pouvez également me contacter directement.
+</p>
+
+
+<div class="contact-line">
+
+<strong>
+E-mail
+</strong>
+
+<br>
+
+<a data-email>
+votre@email.fr
+</a>
+
+</div>
+
+
+<div class="contact-line">
+
+<strong>
+Téléphone
+</strong>
+
+<br>
+
+<a data-phone>
+06 00 00 00 00
+</a>
+
+</div>
+
+
+<div class="contact-line">
+
+<strong>
+Cours
+</strong>
+
+<p style="margin:3px 0 0">
+À domicile à Lyon
+<br>
+ou en visioconférence.
+</p>
+
+</div>
+
+</aside>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+<div class="container">
+
+<div class="footer-bottom">
+
+<span>
+© <span data-year></span> Avec Vincent
+</span>
+
+<a href="legal.html">
+Informations légales
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
